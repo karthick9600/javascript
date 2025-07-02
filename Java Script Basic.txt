@@ -1,0 +1,158 @@
+? Step 1: JavaScript Basics
+Start with the fundamentals.
+
+Topics:
+
+What is JavaScript?
+
+Variables (let, const, var)
+
+Data Types (Number, String, Boolean, Null, Undefined)
+
+Operators (+, -, *, /, %, ==, ===, !=, !==, >, <)
+
+Comments (//, /* */)
+
+Practice:
+
+javascript
+Copy
+Edit
+let name = "Karthick";
+console.log("Hello " + name);
+? Step 2: Control Flow
+Learn how to control the logic.
+
+Topics:
+
+if, else, else if
+
+switch statements
+
+for, while, do...while loops
+
+break, continue
+
+Practice:
+
+javascript
+Copy
+Edit
+for(let i = 1; i <= 5; i++) {
+  console.log("Number: " + i);
+}
+? Step 3: Functions
+Reusable blocks of code.
+
+Topics:
+
+Function declaration
+
+Parameters & Return values
+
+Arrow functions (=>)
+
+Practice:
+
+javascript
+Copy
+Edit
+function greet(name) {
+  return "Hi " + name;
+}
+console.log(greet("Karthick"));
+? Step 4: Arrays & Objects
+Work with collections of data.
+
+Topics:
+
+Arrays: push, pop, shift, unshift, map, filter
+
+Objects: key-value pairs
+
+Practice:
+
+javascript
+Copy
+Edit
+let fruits = ["apple", "banana", "mango"];
+fruits.push("orange");
+console.log(fruits);
+
+let person = { name: "Karthick", age: 25 };
+console.log(person.name);
+? Step 5: DOM Manipulation (for Frontend)
+Control HTML using JavaScript.
+
+Topics:
+
+document.getElementById, querySelector
+
+addEventListener
+
+Modify text, style, classes
+
+Practice:
+
+html
+Copy
+Edit
+<button onclick="sayHello()">Click Me</button>
+<script>
+  function sayHello() {
+    alert("Hello from JS!");
+  }
+</script>
+? Step 6: Events & Forms
+Handle user actions.
+
+Topics:
+
+onclick, onchange, oninput
+
+Form validation
+
+? Step 7: ES6+ Features
+Modern JavaScript features.
+
+Topics:
+
+let & const
+
+Arrow functions
+
+Destructuring
+
+Spread and Rest operators
+
+Template literals
+
+? Step 8: Async JavaScript
+Learn how to handle asynchronous tasks.
+
+Topics:
+
+setTimeout, setInterval
+
+Promises
+
+async & await
+
+Fetch API
+
+? Step 9: JavaScript Projects
+Start small projects:
+
+Project Ideas:
+
+To-do list
+
+Calculator
+
+Weather app using API
+
+Form validation page
+
+? Step 10: JavaScript Framework (Next: React)
+Once you're confident, move to React JS.
+
