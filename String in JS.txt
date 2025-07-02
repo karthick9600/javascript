@@ -1,0 +1,105 @@
+str1+str2
+'Strive not to  7787^&&be a success,but rather to be a value'
+str1.concat(str2)
+'Strive not to  7787^&&be a success,but rather to be a value'
+str2.slice(4,10)
+'rather'
+str2.slice(-4)
+'alue'
+str2.substring(4,10)
+'rather'
+str2.substr(4,10)
+'rather to '
+str2.substr(4,10)
+'rather to '
+str1.replace('Strive','aim')
+'aim not to  7787^&&be a success,'
+str1.toUppercase()
+VM1247:1 Uncaught TypeError: str1.toUppercase is not a function
+    at <anonymous>:1:6
+(anonymous) @ VM1247:1
+str1.toUpperCase()
+'STRIVE NOT TO  7787^&&BE A SUCCESS,'
+str1.length
+35
+str1.trim
+ƒ trim() { [native code] }
+str1.trim()
+'Strive not to  7787^&&be a success,'
+bill.length()
+VM1381:1 Uncaught ReferenceError: bill is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1381:1
+let bill='Rs.10'
+undefined
+bill.length()
+VM1474:1 Uncaught TypeError: bill.length is not a function
+    at <anonymous>:1:6
+(anonymous) @ VM1474:1
+bill.length
+5
+bill.padEnd(7,0)
+'Rs.1000'
+str1[1]
+'t'
+str1.charAt(1)
+'t'
+str1.charcodeAt(1)
+VM1749:1 Uncaught TypeError: str1.charcodeAt is not a function
+    at <anonymous>:1:6
+(anonymous) @ VM1749:1
+str1.charCodeAt(1)
+116
+str1.indexO
+undefined
+str1.IndexOf('e')
+VM1880:1 Uncaught TypeError: str1.IndexOf is not a function
+    at <anonymous>:1:6
+(anonymous) @ VM1880:1
+str1.indexOf('e')
+5
+str1.lastIndexOf('e')
+31
+str1.search('not')
+7
+str1.search('noot')
+-1
+str1.includes('not')
+true
+str1.startsWith('s')
+false
+let name='karthick'
+undefined
+name.random()*name
+VM2343:1 Uncaught TypeError: name.random is not a function
+    at <anonymous>:1:6
+(anonymous) @ VM2343:1
+name.random()*7
+VM2361:1 Uncaught TypeError: name.random is not a function
+    at <anonymous>:1:6
+(anonymous) @ VM2361:1
+Math.floor(Math.random()*name.length)
+0
+name
+'karthick'
+name.floor(name.random()*name.length)
+VM2736:1 Uncaught TypeError: name.random is not a function
+    at <anonymous>:1:17
+(anonymous) @ VM2736:1
+name[0]
+'k'
+name[1]
+'a'
+name[2]
+'r'
+name[4]
+'h'
+name[3]
+'t'
+name[5]
+'i'
+name[6]
+    
+'c'
+name[7]
+'k'
