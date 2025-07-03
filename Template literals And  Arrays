@@ -1,0 +1,161 @@
+//this is an alert
+//Single line command
+/* multiline command
+ */
+
+//dynamicaly typed language
+//variables-8 bytes
+///let score = 0; //initialization
+
+//assignment
+///score = 1000;
+//score='no score'  this is dynamic
+///const pi = 3.14;
+///console.log("Your bill Amount  is  Rs." + score);
+//alert("hi");
+
+//user input
+//let name=prompt("Whats your name")
+//console.log('hi',name)
+
+//let ticket=prompt('how many tickets do you want?')
+//console.log("you should pay",Number(ticket)*20)
+
+///let a = prompt("enter the number");
+///console.log(Number(a)+10);
+let str1 = "Strive  not to  7787^&&be a success,";
+let str2 = "but rather to be a value";
+/*slice(start,end)
+substring(start,end)
+substr(start,length)
+*/
+/*partitioning String
+
+slice(start,end)
+subString(start,end)
+substr(start,length)
+*/
+//template Literals
+//Introduced in 2015 with ECMAScript6 or ES^
+
+let firstName = "Karthick";
+let lastName = "K";
+let city = "chennai";
+console.log(firstName + "" + lastName + "Lives in" + city);
+
+//backtick
+console.log(`${firstName}${lastName}lives in ${city}`);
+
+//multiline string
+let msg = `Happy
+Birth  Day`;
+console.log(msg)
+
+//Singe  and double quotes in String
+msg="Cat's name is toto"
+msg=`cat's name is "toto"`
+console.log(msg)
+//Exercise
+
+let itemCount=5;
+let total=95;
+console.log("you have"+itemCount+"items in your card.")
+console.log("Your bill amount is $"+total)
+
+//Arrays
+let num=10
+let name="karthick"
+
+let cities=["chennai","Madhurai","Trichy"];
+let marks=[78,56,67,54,98];
+//length-total elements in the  Array
+console.log(marks.length)
+console.log(cities[1])
+console.log(cities[2])
+console.log(marks[marks.length-1])
+
+//mix of int and String
+let arr=[5,6,7,'a',"abc",[3,4]]
+console.log(arr)
+console.log(arr[5][1])
+//2d Array
+let matrix=[[3,4,5],[4,5,7],[6,7,8]]
+console.log(matrix[2][1])
+//array methods
+let array=['a','b','c','d','e']
+//push-add element to the end and returns new length
+array.push('f')
+console.log(array)
+//pop-removes element from the end 
+//returns removed value
+console.log(array.pop())
+//shift-removes element from start of the array
+//returns removed value
+console.log(array.shift())
+console.log(array)
+//unshift-adds element to the start of the array
+//returns new length
+console.log(array.unshift('a'))
+console.log(array)
+//delete
+//delete array[2]
+///console.log(array[2])
+
+
+//splice
+// 1st parameter in array index
+//2nd parameter- in arrayhow much element are deleted
+//3rd parameter-values insert in starting
+//2 and 3 parameter combine in replace
+
+
+array.splice(2,2)//elements starting at index
+console.log(array)
+
+array.splice(1,2,'x','y')//deletes and replace in the array
+console.log(array)
+array.splice(1,0,'b')
+console.log(array)//index in 1 element at the no delete so i telled 0 and add b
+
+//slice(startoing index, ending index)
+//ending index not included
+console.log(array.slice(1,2))
+
+//reverse
+array.reverse()
+console.log(array)
+
+//join-converts array to string
+
+let str=array.join()
+console.log(str)
+
+//split-converts string to array
+let str3="g,t,r,e"
+let arr3=str3.split(',')
+console.log(arr3)
+
+//concat and spread operator
+let firstArr=[1,2,3]
+let secondArr=[4,5,6]
+let joinedArr=[firstArr,secondArr]
+console.log(joinedArr)
+
+joinedArr=firstArr.concat(secondArr)
+console.log(joinedArr)
+
+let joined=[...firstArr,...secondArr]
+console.log(joined)
+//exercise
+let Array=[5,8,10,7,9,11]
+Array.splice(3,3,17,19,111)
+console.log(Array)
+console.log(Array.unshift(100))
+console.log(Array)
+Array.splice(Array.length-1,0,200)
+console.log(Array)
+Array.push(1000)
+console.log(Array)
+let middle=Math.floor(Array.length/2)
+Array.splice(middle,0,0)
+console.log(Array)
