@@ -1,0 +1,45 @@
+1. push()
+Adds an element to the end of the array.
+
+js
+Copy
+Edit
+let arr = [1, 2, 3];
+arr.push(4); 
+console.log(arr); // [1, 2, 3, 4]
+?? 2. pop()
+Removes the last element from the array.
+
+js
+Copy
+Edit
+let arr = [1, 2, 3];
+arr.pop();
+console.log(arr); // [1, 2]
+?? 3. unshift()
+Adds an element to the beginning of the array.
+
+js
+Copy
+Edit
+let arr = [2, 3];
+arr.unshift(1);
+console.log(arr); // [1, 2, 3]
+?? 4. shift()
+Removes the first element from the array.
+
+js
+Copy
+Edit
+let arr = [1, 2, 3];
+arr.shift();
+console.log(arr); // [2, 3]
+?? 5. slice(start, end)
+Returns a new array from part of the original (without changing the original).
+
+js
+Copy
+Edit
+let arr = [1, 2, 3, 4, 5];
+let sliced = arr.slice(1, 4);
+console.log(sliced); // [2, 3, 4]
