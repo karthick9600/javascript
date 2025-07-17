@@ -1,0 +1,37 @@
+//generator -generates  values one by one 
+// Able to infinte data in this method
+function*indexGenerator(){
+  let index=1
+  while(true){
+    yield index++
+  }
+} 
+const gen=indexGenerator();
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+
+
+// CallBack - Function passed as Argument
+function greetConsole(name) {
+  console.log('hello', name);
+}
+
+function greetHeading(name) {
+  const heading = document.querySelector('h1');
+  heading.innerHTML = 'hello ' + name;
+}
+
+function greet(callback) {
+  console.log(callback)
+  callback('Ram');
+}
+
+greet(greetConsole);
+//greet(greetHeading);
+greet(name =>{
+  const heading=document.querySelector('h1')
+  heading.innnerHTML='hello'+name;
+})
+
