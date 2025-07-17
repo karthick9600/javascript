@@ -1,0 +1,97 @@
+//function - performs specific task
+//           can be called multiple times
+//           optionally takes input as parameters and
+//           optionally returns value
+
+function isPositive(num) {
+  //parameter
+  return num > 0;
+}
+console.log(isPositive(4)); //argument
+
+function sayHello() {
+  console.log("hello");
+}
+sayHello();
+
+console.log(findProduct(9, 9)); //hoisting
+function findProduct(a, b) {
+  return a * b;
+}
+console.log(findProduct);
+//console.log(findProduct(9,9))
+console.log(typeof findProduct);
+
+//default parameters
+function greet(name = "there") {
+  console.log("hi", name);
+}
+greet("Ram");
+greet();
+
+//recursion- function calling itself
+//factorial-product of first n numbers
+//5!=5*4*3*2*1=5*4!
+function factorial(n) {
+  // this also function declartion
+  if (n == 1) return 1;
+  return n * factorial(n - 1);
+}
+console.log(factorial(5));
+//function  expression
+//assinged toa variable as object
+let a = 100;
+let isEven = function (num) {
+  return num % 2 == 0;
+};
+console.log(isEven(5));
+console.log(isEven);
+
+let arr = [2, 3, 4, 5, 6, 10];
+let findSum = function (arr) {
+  let sum = 0;
+  for (let val of arr) {
+    sum += val;
+  }
+  return sum;
+};
+console.log(findSum(arr));
+
+//let volume= function(l,b,h){
+//    return l*b*h
+//}
+
+//arrow function
+let volume = (l, b, h) => {
+  return l * b * h;
+};
+console.log(volume(7, 8, 9));
+
+let sumOfArr = (arr) => {
+  let sum = 0;
+  for (let val of arr) {
+    sum += val;
+  }
+  return sum;
+};
+console.log(sumOfArr(arr));
+
+//area  of circle
+let area = (r) => Math.PI * r * r;
+console.log(area(5));
+//  console.clear()
+
+//variable arguments - rest parameter
+let prod = function (...args) {
+  let result = 1;
+  for (let val of args) result *= val;
+  return result;
+};
+console.log(prod(7, 6, 5, 4));
+
+let prod2 = function () {
+  let result = 1;
+  for (i = 0; i < arguments; i++) result *= arguments[i];
+  return result;
+};
+console.log(prod2(7, 6, 5, 4));
