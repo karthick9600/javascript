@@ -1,0 +1,21 @@
+//for-each
+arr=['deepa','suresh','ramya']
+arr.forEach(print)
+function print(val){
+  console.log(val.toUpperCase())
+}
+
+arr.forEach(val =>console.log(val.toUpperCase()))
+console.log(arr)
+arr.forEach((val,index,arr)=>{
+  arr[index]=val.toUpperCase()
+})
+console.log(arr)
+
+arr=['ece','it','cse','eee']
+arr.forEach(val=>{
+  const opt=document.createElement('option')
+  opt.textContent=val
+  opt.value=val
+  document.getElementById('branch').appendChild(opt)
+})
