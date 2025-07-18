@@ -1,0 +1,31 @@
+// Memory Management
+// two typesof memory management
+//1.primitive Data types
+//String,number,Bigint,boolean,undefined,symbol,null
+//2.Reference types
+//Arrays,function,All objects-Math,date
+
+let bigInt=9000000000000n
+
+const bigInt2=BigInt(9767646159698)
+
+let a=100
+ a=200
+ let b=a
+ b=300
+ console.log('a is',a)
+ console.log('b is',b)
+
+ let obj1={name:'Danya',age:24}
+ let obj2=obj1
+
+ obj1.age=25
+obj1.name='ramya'
+console.log('obj1',obj1)
+console.log('obj2',obj2)
+
+//Example 
+let arr1=[2,3,4]
+let arr2=arr1
+arr2[0]=10
+console.log(arr1,arr2)// change in Two arrays because Array also Reference type
