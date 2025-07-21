@@ -1,0 +1,34 @@
+// Class keyword  except
+function Users(name,age){
+  this.name = name;
+  this.age = age;
+
+  }
+Users.prototype.login=function(){
+  console.log('hi',this.name)
+  console.log("You are logged in")
+}
+
+let User1=new Users('Adul',34)
+console.log(User1)
+user1.login()
+
+//get and set
+class Temperature{
+  constructor(temp){
+    this._temp=temp
+
+  }
+  get temp(){
+
+    return `${this._temp} deg celcius`
+  }
+  set temp(temp){
+    if(temp>100)
+      temp=100
+    this._temp=temp
+  }
+}
+let temp1=new Temperature(25)
+temp1.temp=190
+console.log(temp1.temp)
