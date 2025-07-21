@@ -1,0 +1,35 @@
+class User {
+  static numberOfUsers = 0;
+
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+    User.numberOfUsers++;
+  }
+
+  login() {
+    console.log("You are logged in");
+  }
+
+  logout() {
+    console.log("You are logged out");
+  }
+
+  static displayTotalUser() {
+    console.log("Total number of users is " + User.numberOfUsers);
+  }
+}
+
+let userOne = new User("Vidya", 21);
+let userTwo = new User("Ramesh", 23);
+let userThree = new User("Mano", 33); 
+
+userOne.login();
+userTwo.logout();
+
+User.displayTotalUser();
+
+// 
+let movie = "ps1";
+let music = new String("ARR");
+
