@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script  type="module" src="script.js">
+
+    </script>
+</body>
+</html>
+<!---import C,{fillGas as fill,repair} from './Car.js'
+let car1 =new C()
+car1.drive()
+fill()
+-->
+
+<!---
+//ES6 -modules
+ export default class Car{
+    drive(){
+        console.log("Driving ")
+    }
+}
+
+export function fillGas(){
+    console.log('filling gas')
+}
+export  function repair(){
+    console.log('Repairing')
+}             
+
+//export default Car
+//export{fillGas,repair}
+
+
+-->
