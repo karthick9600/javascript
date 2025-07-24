@@ -1,0 +1,7 @@
+//JSON API
+   
+let jokeJson =
+  '[{"type":"programming","setup":"Why did the programmer\'s wife leave him?","punchline":"He didn\'t know how to commit.","id":415}]';
+let joke = JSON.parse(jokeJson);
+console.log(joke[0].setup);
+console.log(joke[0].punchline);
