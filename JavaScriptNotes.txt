@@ -1,0 +1,187 @@
+
+
+
+? ?? JavaScript Important Notes for Front-End Developer
+?? 1. Variable Declaration
+js
+Copy
+Edit
+let, const, var
+let ? block-scoped
+
+const ? block-scoped & cannot be reassigned
+
+var ? function-scoped (old, avoid)
+
+?? Note: Always prefer let and const.
+
+
+
+
+?? 2. Data Types
+js
+Copy
+Edit
+String, Number, Boolean, Object, Array, undefined, null
+typeof "Hello" ? "string"
+
+typeof 123 ? "number"
+
+typeof [] ? "object" (array)
+
+typeof {} ? "object"
+
+
+
+
+?? 3. Array Methods
+js
+Copy
+Edit
+let arr = [1, 2, 3];
+arr.push(4);        // [1,2,3,4]
+arr.pop();          // [1,2,3]
+arr.includes(2);    // true
+arr.map(), filter(), reduce()
+
+
+?? 4. Function Types
+js
+Copy
+Edit
+function add(a, b) {
+  return a + b;
+}
+
+const sub = (a, b) => a - b;
+?? Arrow functions are important in React.
+
+
+
+?? 5. Conditional Statements
+js
+Copy
+Edit
+if (x > 5) {
+  console.log("Greater");
+} else {
+  console.log("Smaller");
+}
+Also: switch, ternary x > 5 ? "Yes" : "No"
+
+
+
+
+?? 6. Loops
+js
+Copy
+Edit
+for, while, do...while, for...of, forEach
+js
+Copy
+Edit
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+
+
+?? 7. Objects
+js
+Copy
+Edit
+let person = {
+  name: "Karthick",
+  age: 25
+};
+console.log(person.name);
+
+
+
+
+
+
+?? 8. DOM Manipulation
+js
+Copy
+Edit
+document.getElementById("myId").innerText = "Hello";
+document.querySelector(".class").style.color = "blue";
+
+
+
+
+
+?? 9. Events
+js
+Copy
+Edit
+document.getElementById("btn").addEventListener("click", () => {
+  alert("Button clicked!");
+});
+
+
+
+
+?? 10. ES6 Important Features
+? Must for React:
+
+Arrow functions ()=>
+
+Destructuring:
+
+js
+Copy
+Edit
+const { name, age } = person;
+Spread/rest operator:
+
+js
+Copy
+Edit
+let newArr = [...arr];
+Template literals:
+
+js
+Copy
+Edit
+let msg = `Hello ${name}`;
+
+
+
+
+
+?? 11. Truthy and Falsy
+Falsy values:
+
+js
+Copy
+Edit
+false, 0, "", null, undefined, NaN
+All others are truthy.
+
+
+
+?? 12. Promise (API & Async)
+js
+Copy
+Edit
+fetch("url")
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));
+
+
+
+
+?? 13. Let vs Var vs Const
+Keyword	Scope	Reassignable	Hoisted
+var	Function	Yes	Yes
+let	Block	Yes	No
+const	Block	No	No
+
+
+
+
+?? 14. JavaScript is single-threaded
+It runs one thing at a time using the Event Loop.
