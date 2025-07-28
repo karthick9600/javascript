@@ -1,0 +1,228 @@
+?? JavaScript Basics
+
+
+1. Variables
+js
+Copy
+Edit
+let a = 10;    // block-scoped
+const b = 20;  // constant
+var c = 30;    // function-scoped (avoid using)
+
+
+
+2. Data Types
+Primitive: Number, String, Boolean, Undefined, Null, BigInt, Symbol
+
+Non-Primitive: Objects, Arrays, Functions
+
+js
+Copy
+Edit
+let str = "Hello";
+let num = 123;
+let arr = [1, 2, 3];
+let obj = {name: "Karthick"};
+
+
+
+
+3. Operators
+js
+Copy
+Edit
++  -  *  /  %   // Arithmetic
+==  ===         // Equality (=== checks type also)
+!=  !==
+< > <= >=       // Comparison
+&& || !         // Logical
+
+
+
+
+4. Control Statements
+js
+Copy
+Edit
+if (a > b) { ... }
+else if (...) { ... }
+else { ... }
+
+switch(x) {
+
+  case 1: ...
+  default: ...
+}
+
+for (let i = 0; i < 5; i++) { ... }
+while (condition) { ... }
+
+
+
+5. Functions
+js
+Copy
+Edit
+function greet(name) {
+  return "Hi " + name;
+}
+
+const add = (a, b) => a + b;
+?? Intermediate Concepts
+
+
+
+6. Arrays & Methods
+js
+Copy
+Edit
+let arr = [1, 2, 3];
+
+arr.push(4);     // Add
+arr.pop();       // Remove
+arr.shift();     // Remove first
+arr.unshift(0);  // Add first
+
+arr.map(x => x * 2);
+arr.filter(x => x > 2);
+arr.reduce((sum, val) => sum + val, 0);
+
+
+
+7. Objects
+js
+Copy
+Edit
+const user = {
+  name: "Karthick",
+  age: 25,
+  greet() {
+    return "Hi";
+  }
+};
+
+console.log(user.name);
+
+
+
+8. Destructuring
+js
+Copy
+Edit
+const { name, age } = user;
+const [first, second] = arr;
+
+
+
+9. Spread & Rest
+js
+Copy
+Edit
+const nums = [1, 2, 3];
+const newNums = [...nums, 4];
+
+function sum(...args) {
+  return args.reduce((a, b) => a + b);
+}
+
+
+
+
+10. DOM Manipulation
+js
+Copy
+Edit
+document.getElementById("id");
+document.querySelector(".class");
+document.createElement("div");
+element.innerHTML = "Hello";
+?? Advanced JavaScript
+
+
+
+
+11. Asynchronous JavaScript
+js
+Copy
+Edit
+// Callbacks
+setTimeout(() => {
+  console.log("Done!");
+}, 1000);
+
+// Promises
+fetch("https://api.example.com")
+  .then(res => res.json())
+  .then(data => console.log(data));
+
+// Async/Await
+async function loadData() {
+  const res = await fetch("...");
+  const data = await res.json();
+  console.log(data);
+}
+
+
+
+
+12. Closures
+js
+Copy
+Edit
+function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    console.log(count);
+  };
+}
+
+const counter = outer();
+counter(); // 1
+counter(); // 2
+
+
+
+
+13. Hoisting
+js
+Copy
+Edit
+console.log(a); // undefined
+var a = 5;
+
+
+
+
+14. This Keyword
+js
+Copy
+Edit
+const person = {
+  name: "Karthick",
+  greet() {
+    console.log(this.name);
+  }
+};
+
+
+
+
+15. Event Handling
+js
+Copy
+Edit
+document.getElementById("btn").addEventListener("click", function() {
+  alert("Clicked!");
+});
+?? Bonus: ES6+ Features
+Template Literals: `Hello ${name}`
+
+Arrow Functions: const fn = () => {}
+
+Default Parameters: function add(a=0, b=0)
+
+Optional Chaining: user?.address?.city
+
+Nullish Coalescing: value ?? "default"
+
