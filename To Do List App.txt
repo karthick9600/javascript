@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h2>To  Do List</h2>  
+        <input type="text" id="input">
+        <button id="add">ADD</button>
+        <div id="todolist">
+
+
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+<!--
+body{
+    margin: 0;
+   background-color: blanchedalmond;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#wrapper h2{
+    display: flex;
+    justify-content: center;
+}
+h2{
+    color: #f5c014;
+    letter-spacing: 1px;
+
+}
+input{
+    border-radius: 5px;
+    border:2px solid black;
+    margin-top: 30px;
+    height: 2.5em;
+    width: 250px;
+    padding-left: 10px;
+
+}
+input:active{
+    border:none;
+
+}
+#wrapper{
+    height:500px;
+    width:400px;
+    margin:200px  auto;
+    background-color: #1f2029;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#add{
+    background-color:#f5c014 ;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+
+
+
+-->
+
+
+<!--
+
+ //Program is Ok
+
+let button=document.getElementById('add')
+let todoList=document.getElementById('todolist')
+let input=document.getElementById('input')
+
+//Local Storage,Cookies
+
+let todos=[];  // Array created because in used in before seen all Id's  store Ease to access in Local Storage
+
+window.onload=()=>{
+    todos=JSON.parse(localStorage.getItem('todos'))||[]
+    todos.forEach(todo=>addtodo(todo))
+}
+
+
+button.addEventListener('click',()=>{
+todos.push(input.value)
+addtodo(input.value);
+//console.log(todos)
+input.value=''
+
+
+})
+function addtodo(todo){
+    let para=document.createElement("p")
+    para.innerText=todo;
+    todoList.appendChild(para)
+    localStorage.setItem('todos',JSON.stringify(todos))
+
+    para.addEventListener("click",()=>{
+        para.style.textDecoration='line-through'
+
+    })
+    para.addEventListener("dblclick",()=>{
+      todoList.removeChild(para);
+      
+      remove(todo);
+    })
+}
+
+function remove(todo){
+     let index=todos.indexOf(todo)
+     if(index>-1){
+     todos.splice(index, 1);
+
+     }
+     //localStorage.clear()
+     localStorage.setItem('todos',JSON.stringify(todos))
+       
+}-->
