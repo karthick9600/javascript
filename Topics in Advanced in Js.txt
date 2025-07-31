@@ -1,0 +1,13 @@
+?? 1. Must-Know Advanced JavaScript Topics for React
+Master these advanced JavaScript concepts — they are crucial for React development:
+
+Topic	Why it Matters in React
+Closures	For hooks, especially custom hooks.
+Promises & Async/Await	API calls and data handling.
+Destructuring & Spread/Rest	Clean component props/state.
+Callback & Higher Order Functions	Reusable logic in hooks/components.
+Event Loop & Microtasks	Performance optimization.
+Modules (import/export)	Code splitting, maintainability.
+'this' Keyword & Arrow Functions	Context in classes/functions.
+Debounce & Throttle	UI performance (e.g. search, scroll).
+Functional Programming	Used heavily in hooks and data transformations.
